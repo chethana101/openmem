@@ -1,0 +1,46 @@
+{
+  "version": 1,
+  "hooks": {
+    "sessionStart": [
+      {
+        "type": "command",
+        "bash": "openmem hook session-start",
+        "powershell": "openmem hook session-start",
+        "timeoutSec": 10
+      }
+    ],
+    "postToolUse": [
+      {
+        "type": "command",
+        "matcher": "^(?:bash|view|grep|web_fetch)$",
+        "bash": "openmem hook post-tool-use",
+        "powershell": "openmem hook post-tool-use",
+        "timeoutSec": 10
+      }
+    ],
+    "agentStop": [
+      {
+        "type": "command",
+        "bash": "openmem hook agent-stop",
+        "powershell": "openmem hook agent-stop",
+        "timeoutSec": 15
+      }
+    ],
+    "preCompact": [
+      {
+        "type": "command",
+        "bash": "openmem hook pre-compact",
+        "powershell": "openmem hook pre-compact",
+        "timeoutSec": 15
+      }
+    ],
+    "sessionEnd": [
+      {
+        "type": "command",
+        "bash": "openmem hook session-end",
+        "powershell": "openmem hook session-end",
+        "timeoutSec": 30
+      }
+    ]
+  }
+}

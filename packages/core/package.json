@@ -1,0 +1,51 @@
+{
+  "name": "@openmem/core",
+  "version": "0.1.0",
+  "description": "Agent-agnostic core library for openmem",
+  "license": "MIT",
+  "type": "module",
+  "files": ["dist"],
+  "engines": {
+    "node": ">=22.5.0"
+  },
+  "keywords": ["ai", "agent", "memory", "context", "copilot"],
+  "publishConfig": {
+    "access": "public"
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./store": {
+      "import": "./dist/store/index.js",
+      "types": "./dist/store/index.d.ts"
+    },
+    "./memory": {
+      "import": "./dist/memory/index.js",
+      "types": "./dist/memory/index.d.ts"
+    },
+    "./context": {
+      "import": "./dist/context/index.js",
+      "types": "./dist/context/index.d.ts"
+    },
+    "./export": {
+      "import": "./dist/export/index.js",
+      "types": "./dist/export/index.d.ts"
+    }
+  },
+  "scripts": {
+    "build": "tsc --project tsconfig.json",
+    "prepublishOnly": "pnpm run build",
+    "typecheck": "tsc --project tsconfig.json --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "typescript": "^5.7.2",
+    "vitest": "^2.1.8"
+  }
+}

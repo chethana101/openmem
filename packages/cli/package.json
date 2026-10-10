@@ -1,0 +1,37 @@
+{
+  "name": "openmem",
+  "version": "0.1.0",
+  "description": "Copilot-first memory and context layer for AI coding agents",
+  "license": "MIT",
+  "type": "module",
+  "files": ["dist"],
+  "engines": {
+    "node": ">=22.5.0"
+  },
+  "keywords": ["ai", "agent", "cli", "memory", "copilot"],
+  "publishConfig": {
+    "access": "public"
+  },
+  "bin": {
+    "openmem": "./dist/index.js"
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsc --project tsconfig.json",
+    "prepublishOnly": "pnpm run build",
+    "typecheck": "tsc --project tsconfig.json --noEmit",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@openmem/core": "workspace:*",
+    "@openmem/hooks": "workspace:*",
+    "@openmem/mcp": "workspace:*",
+    "@openmem/instructions": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "typescript": "^5.7.2",
+    "vitest": "^2.1.8"
+  }
+}

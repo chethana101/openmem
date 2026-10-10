@@ -1,0 +1,9 @@
+# Dependencies and build artifacts
+node_modules/
+dist/
+coverage/
+
+# openmem local storage
+.openmem/openmem.db*
+.openmem/logs/
+

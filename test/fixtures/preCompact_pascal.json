@@ -1,0 +1,8 @@
+{
+  "session_id": "sess_01JTESTPASCAL002",
+  "cwd": "/workspace",
+  "timestamp": "2026-10-08T18:15:00.000Z",
+  "trigger": "manual",
+  "transcript_path": "/workspace/.copilot/transcript.jsonl",
+  "hook_event_name": "PreCompact"
+}

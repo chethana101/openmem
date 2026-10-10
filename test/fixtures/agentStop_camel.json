@@ -1,0 +1,8 @@
+{
+  "sessionId": "sess_01JTESTCAMEL001",
+  "cwd": "C:\\Users\\User\\Playiiit Company\\agent-mem",
+  "timestamp": 1728410100000,
+  "stopReason": "model_turn_complete",
+  "transcriptPath": "C:\\Users\\User\\.copilot\\transcripts\\sess_01JTESTCAMEL001.jsonl",
+  "stop_hook_active": false
+}

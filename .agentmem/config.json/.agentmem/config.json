@@ -1,0 +1,17 @@
+{
+  "dbPath": "C:\\Users\\User\\Playiiit Company\\agent-mem\\.openmem\\openmem.db",
+  "namespace": "df147a2e36dd1ec0",
+  "capture": {
+    "onStop": false
+  },
+  "context": {
+    "compress": true,
+    "threshold": 6000,
+    "denyList": [],
+    "refTtlDays": 7
+  },
+  "memory": {
+    "capacity": 500,
+    "decayHalfLifeDays": 30
+  }
+}

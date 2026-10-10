@@ -1,0 +1,31 @@
+{
+  "name": "@openmem/hooks",
+  "version": "0.1.0",
+  "description": "Hook handlers and payload normalizer for openmem",
+  "license": "MIT",
+  "type": "module",
+  "files": ["dist"],
+  "engines": {
+    "node": ">=22.5.0"
+  },
+  "keywords": ["ai", "agent", "hooks", "memory", "copilot"],
+  "publishConfig": {
+    "access": "public"
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsc --project tsconfig.json",
+    "prepublishOnly": "pnpm run build",
+    "typecheck": "tsc --project tsconfig.json --noEmit",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@openmem/core": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "typescript": "^5.7.2",
+    "vitest": "^2.1.8"
+  }
+}

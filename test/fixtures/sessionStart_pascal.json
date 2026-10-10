@@ -1,0 +1,8 @@
+{
+  "session_id": "sess_01JTESTPASCALSESSIONSTART002",
+  "timestamp": "2026-10-08T18:00:00.000Z",
+  "cwd": "/workspace",
+  "source": "startup",
+  "initial_prompt": "Run tests across all workspaces",
+  "hook_event_name": "SessionStart"
+}

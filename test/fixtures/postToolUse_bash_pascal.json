@@ -1,0 +1,12 @@
+{
+  "session_id": "sess_01JTESTPASCAL002",
+  "cwd": "/workspace",
+  "timestamp": "2026-10-08T18:05:00.000Z",
+  "tool_name": "bash",
+  "tool_input": { "command": "cat /var/log/build.log" },
+  "tool_result": {
+    "result_type": "success",
+    "text_result_for_llm": "Build completed with 0 errors and 2 warnings."
+  },
+  "hook_event_name": "PostToolUse"
+}

@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json.schemastore.org/package.json",
+  "name": "openmem",
+  "version": "0.1.0",
+  "description": "Copilot-first persistent memory and smart context compression layer",
+  "author": "openmem contributors",
+  "license": "MIT",
+  "homepage": "https://github.com/openmem/openmem",
+  "hooks": "./hooks.json",
+  "mcp": "./mcp.json",
+  "instructions": "./copilot-instructions.md"
+}

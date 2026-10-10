@@ -1,0 +1,11 @@
+{
+  "sessionId": "sess_01JTESTCAMEL001",
+  "cwd": "C:\\Users\\User\\Playiiit Company\\agent-mem",
+  "timestamp": 1728410050000,
+  "toolName": "bash",
+  "toolArgs": { "command": "pnpm test" },
+  "toolResult": {
+    "resultType": "success",
+    "textResultForLlm": "Test run output starting...\n PASS  packages/core/test/store.test.ts\n PASS  packages/core/test/memory.test.ts\n FAIL  packages/core/test/flaky.test.ts\n  ● flaky test failed\n    Error: assertion failed at line 42: expected true but got false\n      at flaky.test.ts:42:15\nSummary: 2 passed, 1 failed. Done in 3.4s"
+  }
+}

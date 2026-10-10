@@ -1,0 +1,9 @@
+{
+  "session_id": "sess_01JTESTPASCAL002",
+  "cwd": "/workspace",
+  "timestamp": "2026-10-08T18:10:00.000Z",
+  "stop_reason": "end_turn",
+  "transcript_path": "/workspace/.copilot/transcript.jsonl",
+  "stop_hook_active": true,
+  "hook_event_name": "AgentStop"
+}

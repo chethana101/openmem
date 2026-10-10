@@ -1,0 +1,46 @@
+{
+  "version": 1,
+  "hooks": {
+    "sessionStart": [
+      {
+        "type": "command",
+        "bash": "npx --no-install openmem hook session-start",
+        "powershell": "npx --no-install openmem hook session-start",
+        "timeoutSec": 10
+      }
+    ],
+    "postToolUse": [
+      {
+        "type": "command",
+        "matcher": "^(?:bash|view|grep|web_fetch)$",
+        "bash": "npx --no-install openmem hook post-tool-use",
+        "powershell": "npx --no-install openmem hook post-tool-use",
+        "timeoutSec": 10
+      }
+    ],
+    "agentStop": [
+      {
+        "type": "command",
+        "bash": "npx --no-install openmem hook agent-stop",
+        "powershell": "npx --no-install openmem hook agent-stop",
+        "timeoutSec": 15
+      }
+    ],
+    "preCompact": [
+      {
+        "type": "command",
+        "bash": "npx --no-install openmem hook pre-compact",
+        "powershell": "npx --no-install openmem hook pre-compact",
+        "timeoutSec": 15
+      }
+    ],
+    "sessionEnd": [
+      {
+        "type": "command",
+        "bash": "npx --no-install openmem hook session-end",
+        "powershell": "npx --no-install openmem hook session-end",
+        "timeoutSec": 30
+      }
+    ]
+  }
+}
