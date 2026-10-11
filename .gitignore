@@ -3,7 +3,7 @@ node_modules/
 dist/
 coverage/
 
-# openmem local storage
-.openmem/openmem.db*
-.openmem/logs/
+# openmem local storage (all runtime data: db, logs, memories, config)
+.openmem/
+.agentmem/
 
