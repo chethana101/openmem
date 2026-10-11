@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="openmem-logo.png" alt="OpenMem logo" width="160">
+</p>
+
 # OpenMem
 
 > Persistent, inspectable memory and smart context management for AI coding agents - delivered through GitHub Copilot hooks, MCP, and custom instructions.
