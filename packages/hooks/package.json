@@ -9,11 +9,26 @@
     "node": ">=22.5.0"
   },
   "keywords": ["ai", "agent", "hooks", "memory", "copilot"],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chethana101/openmem.git",
+    "directory": "packages/hooks"
+  },
+  "bugs": {
+    "url": "https://github.com/chethana101/openmem/issues"
+  },
+  "homepage": "https://github.com/chethana101/openmem#readme",
   "publishConfig": {
     "access": "public"
   },
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
   "scripts": {
     "build": "tsc --project tsconfig.json",
     "prepublishOnly": "pnpm run build",

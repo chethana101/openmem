@@ -9,15 +9,34 @@
     "node": ">=22.5.0"
   },
   "keywords": ["ai", "agent", "mcp", "memory", "copilot"],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chethana101/openmem.git",
+    "directory": "packages/mcp"
+  },
+  "bugs": {
+    "url": "https://github.com/chethana101/openmem/issues"
+  },
+  "homepage": "https://github.com/chethana101/openmem#readme",
   "publishConfig": {
     "access": "public"
   },
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "bin": {
+    "openmem-mcp": "./dist/server.js"
+  },
   "scripts": {
     "build": "tsc --project tsconfig.json",
     "prepublishOnly": "pnpm run build",
-    "typecheck": "tsc --project tsconfig.json --noEmit"
+    "typecheck": "tsc --project tsconfig.json --noEmit",
+    "test": "vitest run"
   },
   "dependencies": {
     "@openmem/core": "workspace:*",

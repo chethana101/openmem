@@ -9,6 +9,15 @@
     "node": ">=22.5.0"
   },
   "keywords": ["ai", "agent", "cli", "memory", "copilot"],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chethana101/openmem.git",
+    "directory": "packages/cli"
+  },
+  "bugs": {
+    "url": "https://github.com/chethana101/openmem/issues"
+  },
+  "homepage": "https://github.com/chethana101/openmem#readme",
   "publishConfig": {
     "access": "public"
   },

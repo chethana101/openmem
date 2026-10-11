@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 /**
  * openmem MCP server - stdio transport.
  *
