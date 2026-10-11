@@ -1,5 +1,5 @@
 /**
- * @openmem/plugin - Copilot CLI Plugin bundle metadata and loader.
+ * openmem-plugin - Copilot CLI Plugin bundle metadata and loader.
  */
 
 import * as fs from "node:fs";

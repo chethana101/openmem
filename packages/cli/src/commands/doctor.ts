@@ -2,7 +2,7 @@ import * as fs from "node:fs";
 import { createRequire } from "node:module";
 import * as path from "node:path";
 import type { DatabaseSync as DatabaseSyncType } from "node:sqlite";
-import { MemoryManager, OpenmemStore, loadConfig } from "@openmem/core";
+import { MemoryManager, OpenmemStore, loadConfig } from "openmem-core";
 
 const require = createRequire(import.meta.url);
 const { DatabaseSync } = require("node:sqlite") as { DatabaseSync: typeof DatabaseSyncType };

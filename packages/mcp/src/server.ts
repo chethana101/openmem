@@ -25,7 +25,7 @@ import {
   MemoryManager,
   OpenmemStore,
   loadConfig,
-} from "@openmem/core";
+} from "openmem-core";
 
 export const TOOLS = [
   {

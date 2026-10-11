@@ -29,7 +29,7 @@ We chose **Node.js ≥ 22 with built-in `node:sqlite`** (with an automatic keywo
    Both the GitHub Copilot CLI and Model Context Protocol (MCP) TypeScript SDK are built on JavaScript/TypeScript. Implementing `openmem` in TypeScript ensures direct interoperability with `@modelcontextprotocol/sdk` and standard Node stdio streams.
 
 4. **Handling the Windows FTS5 Limitation:**
-   The official Windows x64 distribution of Node v22.14 does not bundle the SQLite FTS5 extension. Rather than failing or falling back to slow native builds, `@openmem/core` detects FTS5 support at runtime. If absent, it activates an in-process keyword matching and token ranking engine that provides equivalent BM25-like scoring semantics without native crashes.
+   The official Windows x64 distribution of Node v22.14 does not bundle the SQLite FTS5 extension. Rather than failing or falling back to slow native builds, `openmem-core` detects FTS5 support at runtime. If absent, it activates an in-process keyword matching and token ranking engine that provides equivalent BM25-like scoring semantics without native crashes.
 
 ---
 

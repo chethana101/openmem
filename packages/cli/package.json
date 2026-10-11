@@ -1,5 +1,5 @@
 {
-  "name": "openmem",
+  "name": "openmem-cli",
   "version": "0.1.0",
   "description": "Copilot-first memory and context layer for AI coding agents",
   "license": "MIT",
@@ -33,10 +33,10 @@
     "test": "vitest run"
   },
   "dependencies": {
-    "@openmem/core": "workspace:*",
-    "@openmem/hooks": "workspace:*",
-    "@openmem/mcp": "workspace:*",
-    "@openmem/instructions": "workspace:*"
+    "openmem-core": "workspace:*",
+    "openmem-hooks": "workspace:*",
+    "openmem-mcp": "workspace:*",
+    "openmem-instructions": "workspace:*"
   },
   "devDependencies": {
     "@types/node": "^22.10.0",

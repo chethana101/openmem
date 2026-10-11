@@ -34,7 +34,7 @@ Copilot uses two distinct payload casing conventions:
   - Contains `hook_event_name: "PostToolUse"` and ISO-8601 string timestamps (e.g. `"2026-10-08T12:00:00Z"`).
   - Uses snake_case fields like `tool_name`, `tool_args`, `tool_result`.
 
-**Our Solution:** `@openmem/hooks/normalizer.ts` normalizes both payload variations into a unified `NormalizedEvent` contract so all handlers execute identically.
+**Our Solution:** `openmem-hooks/normalizer.ts` normalizes both payload variations into a unified `NormalizedEvent` contract so all handlers execute identically.
 
 ---
 
@@ -87,7 +87,7 @@ Copilot uses two distinct payload casing conventions:
 ### 5.1 `node:sqlite` Built-in Engine
 - Node.js ≥ 22.5 includes native `DatabaseSync` under `node:sqlite`.
 - **FTS5 Module on Windows:** The official Node.js v22 Windows binary is compiled without the SQLite FTS5 extension (`no such module: fts5`).
-- `@openmem/core` detects FTS5 at database initialization:
+- `openmem-core` detects FTS5 at database initialization:
   - If FTS5 is available: uses `fts5` virtual table with `bm25()` ranking.
   - If FTS5 is unavailable: falls back to an in-process keyword matching and token occurrence scoring algorithm that provides identical hybrid retrieval without external native compilation dependencies!
 

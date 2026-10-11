@@ -1,5 +1,5 @@
 {
-  "name": "@openmem/plugin",
+  "name": "openmem-plugin",
   "version": "0.1.0",
   "description": "GitHub Copilot CLI plugin bundle for openmem",
   "license": "MIT",
@@ -30,10 +30,10 @@
     "test": "vitest run"
   },
   "dependencies": {
-    "@openmem/core": "workspace:*",
-    "@openmem/hooks": "workspace:*",
-    "@openmem/mcp": "workspace:*",
-    "@openmem/instructions": "workspace:*"
+    "openmem-core": "workspace:*",
+    "openmem-hooks": "workspace:*",
+    "openmem-mcp": "workspace:*",
+    "openmem-instructions": "workspace:*"
   },
   "devDependencies": {
     "@types/node": "^22.10.0",

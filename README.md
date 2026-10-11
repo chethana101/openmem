@@ -35,7 +35,7 @@
 
 ```bash
 # Install globally
-npm install -g openmem
+npm install -g openmem-cli
 
 # Wire into your repo (adds hooks, MCP registration, instructions)
 cd your-repo
@@ -99,12 +99,12 @@ openmem mcp            # start MCP server
 
 | Package                 | Description                                                                 |
 | ----------------------- | --------------------------------------------------------------------------- |
-| `@openmem/core`         | Agent-agnostic library: store, memory, retrieval, policies, context, export |
-| `@openmem/hooks`        | Hook handlers + payload normalizer                                          |
-| `@openmem/mcp`          | MCP server (stdio)                                                          |
-| `@openmem/cli`          | The `openmem` binary                                                        |
-| `@openmem/instructions` | Generators for Copilot instruction files                                    |
-| `@openmem/plugin`       | GitHub Copilot CLI plugin bundle (manifest, hooks, MCP, instructions)       |
+| `openmem-core`         | Agent-agnostic library: store, memory, retrieval, policies, context, export |
+| `openmem-hooks`        | Hook handlers + payload normalizer                                          |
+| `openmem-mcp`          | MCP server (stdio)                                                          |
+| `openmem-cli`       | The `openmem` binary                                                        |
+| `openmem-instructions` | Generators for Copilot instruction files                                    |
+| `openmem-plugin`       | GitHub Copilot CLI plugin bundle (manifest, hooks, MCP, instructions)       |
 
 ## Documentation
 

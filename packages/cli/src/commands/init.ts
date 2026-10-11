@@ -1,8 +1,8 @@
 import * as fs from "node:fs";
 import * as os from "node:os";
 import * as path from "node:path";
-import { loadConfig, writeConfig } from "@openmem/core";
-import { writeInstructionsFile } from "@openmem/instructions";
+import { loadConfig, writeConfig } from "openmem-core";
+import { writeInstructionsFile } from "openmem-instructions";
 
 export interface InitOptions {
   cli?: boolean | undefined;

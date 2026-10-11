@@ -69,7 +69,7 @@ async function main(): Promise<void> {
     }
 
     case "hook": {
-      // Delegate to @openmem/hooks
+      // Delegate to openmem-hooks
       // Must read from stdin, process, output to stdout, exit 0
       const eventName = args[1];
       if (!eventName) {
@@ -78,7 +78,7 @@ async function main(): Promise<void> {
       }
       // Dynamically load hooks runner
       try {
-        const hooksMod = await import("@openmem/hooks");
+        const hooksMod = await import("openmem-hooks");
         if (typeof (hooksMod as unknown as { run: () => Promise<void> }).run === "function") {
           await (hooksMod as unknown as { run: () => Promise<void> }).run();
         } else {
@@ -92,7 +92,7 @@ async function main(): Promise<void> {
 
     case "mcp": {
       // Start MCP server over stdio
-      const { startMcpServer } = await import("@openmem/mcp");
+      const { startMcpServer } = await import("openmem-mcp");
       await startMcpServer();
       break;
     }

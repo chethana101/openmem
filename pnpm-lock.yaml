@@ -193,16 +193,16 @@ importers:
 
   packages/cli:
     dependencies:
-      '@openmem/core':
+      openmem-core:
         specifier: workspace:*
         version: link:../core
-      '@openmem/hooks':
+      openmem-hooks:
         specifier: workspace:*
         version: link:../hooks
-      '@openmem/instructions':
+      openmem-instructions:
         specifier: workspace:*
         version: link:../instructions
-      '@openmem/mcp':
+      openmem-mcp:
         specifier: workspace:*
         version: link:../mcp
     devDependencies:
@@ -230,7 +230,7 @@ importers:
 
   packages/hooks:
     dependencies:
-      '@openmem/core':
+      openmem-core:
         specifier: workspace:*
         version: link:../core
     devDependencies:
@@ -261,7 +261,7 @@ importers:
       '@modelcontextprotocol/sdk':
         specifier: ^1.0.0
         version: 1.32.1(supports-color@7.2.0)(zod@4.6.5)
-      '@openmem/core':
+      openmem-core:
         specifier: workspace:*
         version: link:../core
     devDependencies:
@@ -274,16 +274,16 @@ importers:
 
   packages/plugin:
     dependencies:
-      '@openmem/core':
+      openmem-core:
         specifier: workspace:*
         version: link:../core
-      '@openmem/hooks':
+      openmem-hooks:
         specifier: workspace:*
         version: link:../hooks
-      '@openmem/instructions':
+      openmem-instructions:
         specifier: workspace:*
         version: link:../instructions
-      '@openmem/mcp':
+      openmem-mcp:
         specifier: workspace:*
         version: link:../mcp
     devDependencies:

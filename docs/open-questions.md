@@ -10,7 +10,7 @@ This document tracks technical risks, unanswered platform behaviors, and planned
 |---|---|
 | **What is the Copilot CLI MCP config path?** | Project-level: `.mcp.json`. Global user-level: `~/.copilot/mcp-config.json`. |
 | **Does `sessionEnd` contain `transcriptPath`?** | No. Only `agentStop` provides `transcriptPath`. Handled by persisting `transcriptPath` in SQLite during `agentStop`. |
-| **How does payload casing differ across environments?** | Copilot CLI uses camelCase with epoch-ms timestamps. Certain schema definitions use PascalCase / snake_case with ISO-8601 strings. Unified by `@openmem/hooks/normalizer.ts`. |
+| **How does payload casing differ across environments?** | Copilot CLI uses camelCase with epoch-ms timestamps. Certain schema definitions use PascalCase / snake_case with ISO-8601 strings. Unified by `openmem-hooks/normalizer.ts`. |
 | **Can Windows Node v22 run SQLite FTS5?** | Windows Node v22 lacks FTS5 by default. Resolved by transparent fallback to in-process keyword occurrence ranking. |
 
 ---
@@ -45,4 +45,4 @@ This document tracks technical risks, unanswered platform behaviors, and planned
 2. **Local Vector Embeddings:**
    Evaluate lightweight, in-process embeddings (e.g. transformers.js with a quantized mini-model) for semantic similarity matching on write path.
 3. **Claude Code Adapter:**
-   Create a thin hook adapter for Claude Code using the same normalized `@openmem/core` API.
+   Create a thin hook adapter for Claude Code using the same normalized `openmem-core` API.

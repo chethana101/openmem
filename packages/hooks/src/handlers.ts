@@ -15,7 +15,7 @@ import {
   MemoryManager,
   OpenmemStore,
   loadConfig,
-} from "@openmem/core";
+} from "openmem-core";
 import { log } from "./logger.js";
 import type { NormalizedEvent } from "./normalizer.js";
 

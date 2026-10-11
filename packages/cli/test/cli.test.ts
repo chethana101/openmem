@@ -1,7 +1,7 @@
 import * as fs from "node:fs";
 import * as os from "node:os";
 import * as path from "node:path";
-import { OpenmemStore } from "@openmem/core";
+import { OpenmemStore } from "openmem-core";
 import { afterEach, beforeEach, describe, expect, it } from "vitest";
 import { runDoctor } from "../src/commands/doctor.js";
 import { runInit } from "../src/commands/init.js";

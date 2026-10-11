@@ -15,7 +15,7 @@
 
 ## 2. Automatic Secret Redaction
 
-Before any text is written to the SQLite store, `@openmem/core/policies/redaction.ts` scrubs credentials using over 15 targeted pattern matchers:
+Before any text is written to the SQLite store, `openmem-core/policies/redaction.ts` scrubs credentials using over 15 targeted pattern matchers:
 
 | Secret Type | Matcher Pattern | Replacement |
 |---|---|---|

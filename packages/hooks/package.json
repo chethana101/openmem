@@ -1,5 +1,5 @@
 {
-  "name": "@openmem/hooks",
+  "name": "openmem-hooks",
   "version": "0.1.0",
   "description": "Hook handlers and payload normalizer for openmem",
   "license": "MIT",
@@ -36,7 +36,7 @@
     "test": "vitest run"
   },
   "dependencies": {
-    "@openmem/core": "workspace:*"
+    "openmem-core": "workspace:*"
   },
   "devDependencies": {
     "@types/node": "^22.10.0",

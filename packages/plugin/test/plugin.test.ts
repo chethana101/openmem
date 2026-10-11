@@ -4,7 +4,7 @@ import * as path from "node:path";
 import { afterEach, beforeEach, describe, expect, it } from "vitest";
 import { getPluginPaths, installPluginToDirectory, loadPluginManifest } from "../src/index.js";
 
-describe("@openmem/plugin", () => {
+describe("openmem-plugin", () => {
   let tmpDir: string;
 
   beforeEach(() => {

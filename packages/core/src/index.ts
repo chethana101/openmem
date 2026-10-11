@@ -1,5 +1,5 @@
 /**
- * @openmem/core - public API
+ * openmem-core - public API
  */
 
 // Types

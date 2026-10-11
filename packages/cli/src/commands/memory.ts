@@ -5,8 +5,8 @@ import {
   importMarkdown,
   loadConfig,
   writeMarkdownFile,
-} from "@openmem/core";
-import type { MemoryKind } from "@openmem/core";
+} from "openmem-core";
+import type { MemoryKind } from "openmem-core";
 
 export function runAdd(
   text: string,
